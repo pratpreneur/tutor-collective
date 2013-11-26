@@ -11,21 +11,19 @@
 
 <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
   <div class="container">
-    <button type="button" class="btn btn-success btn-lg">Bacon
-    </button>
     <%= link_to 'TutorCollective', root_path, :class => 'navbar-brand navbar-left' %>
     <div class="navbar-collapse collapse navbar-right">					
       <ul class="nav navbar-nav">            
         <% if current_user %>
         <li>
-        <%= link_to 'Logout', logout_path %>
+        <button type="button" class="btn btn-success btn-sm">See ya later alligator! </button>
         </li>
         <% else %>
         <li>
-        <%= link_to 'Register', register_path %>
+        <button type="button" class="btn btn-success btn-sm">Register, yes, do it! </button>
         </li>
         <li>
-        <%= link_to 'Login', login_path %>
+        <button type="button" class="btn btn-success btn-sm">Login </button>
         </li>
         <% end %>
       </ul>
